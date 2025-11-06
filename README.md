@@ -1,0 +1,1 @@
+Este proyecto implementa dos programas en Go que se conectan a Oracle y PostgreSQL respectivamente, ejecutan un conjunto de consultas predefinidas, y verifican la equivalencia de resultados entre ambas bases.
