@@ -1,0 +1,11 @@
+ El instituto  “U de los Llanos” dentro de su proceso de mejoramiento y crecimiento, ha definido que debe contar  un  sistema de  información  que permita la administración de 
+sus documentos físicos y digitales . La administración ha decidido  que los  usuarios  podrán  acceder a dichos documentos a través de una solicitud que se puede hacer en sitio 
+o en línea,  cada solicitud se debe  registrar  para temas de auditorías. Los usuarios que pueden tener acceso a los documentos son los siguientes: estudiantes, profesores  
+y personal administrativo.
+
+Los documentos se clasifican de la siguiente manera:  libros, tesis de grado , artículos científicos,  revistas, actas de reuniones, correspondencia (ingreso y salida).
+Los documentos pueden estar en formato digital o en formato físico,  para el caso de los libros  pueden existir libros con varios autores, y libros que son suministrados 
+por diferentes editoriales. Se definió que un usuario solo puede solicitar hasta 3 documentos a la vez. Respecto al tiempo de  devolución de los documentos, estará fijado
+ así: estudiantes y administrativos 5 días, y los profesores hasta 10 días. La fecha de devolución de los documentos deberá ser calculada por el sistema de información.
+
+Todos los usuarios deberán tener asociado en el sistema de información un nombre de usuario, una contraseña ,y un correo electrónico de recuperación de contraseña.
