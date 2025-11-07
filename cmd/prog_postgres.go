@@ -1,21 +1,21 @@
 package main
 
 import (
-  "database/sql"
-  _ "github.com/lib/pq"
-  //"fmt"
-  "log"
+	"fmt"
+	"log"
+	"projectBases/pkg/db"
 )
 
 func main() {
-  connStr := "host=localhost port=5432 dbname=mi_db user=mi_user password=mi_pass sslmode=disable"
-  db, err := sql.Open("postgres", connStr)
-  if err != nil { log.Fatal(err) }
-  defer db.Close()
+	fmt.Println("===== Ejecutando módulo PostgreSQL =====")
 
-  // Leer consultas de archivo o embed
-  // Ejecutar Q1: SELECT -> obtener filas -> imprimir en formato CSV
-  // Ejecutar Q3: UPDATE -> imprimir rowsAffected
-  // Ejecutar Q4: DDL -> imprimir success
-  // etc.
+	conn, err := db.ConnectPostgres()
+	if err != nil {
+		log.Fatalf("Error: %v", err)
+	}
+	defer conn.Close()
+
+	if err := db.RunQueries(conn, "postgres"); err != nil {
+		log.Fatalf("Error al ejecutar consultas PostgreSQL: %v", err)
+	}
 }
