@@ -8,7 +8,7 @@ import (
 
 func main() {
     connStr := "oracle://system:1234@localhost:1522/XEPDB1"
-    db, err := gosql.Open("oracle", connStr)
+    db, err := sql.Open("oracle", connStr)
     if err != nil {
         panic(err)
     }
