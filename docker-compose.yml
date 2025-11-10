@@ -1,0 +1,31 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: mi_basedatos
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  oracle:
+    image: gvenzl/oracle-xe:latest
+    container_name: oracle-db
+    restart: always
+    environment:
+      ORACLE_PASSWORD: 1234
+      APP_USER: system
+      APP_USER_PASSWORD: 1234
+    ports:
+      - "1522:1521"
+      - "5501:5500"
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+
+volumes:
+  postgres_data:
+  oracle_data:
