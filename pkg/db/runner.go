@@ -34,7 +34,6 @@ func LoadQueries(dbType string) ([]string, error) {
 			queries = append(queries, q)
 		}
 	}
-	_, err := db.ExecDDL(query string)
 
 	return queries, nil
 }

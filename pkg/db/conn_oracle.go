@@ -3,7 +3,6 @@ package db
 import (
 	"database/sql"
 	"fmt"
-	_ "github.com/godror/godror"
 )
 
 // ConnectOracle crea y devuelve una conexión activa a Oracle.
