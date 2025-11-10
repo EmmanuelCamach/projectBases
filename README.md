@@ -1,5 +1,5 @@
-## Proyecto Bases de Datos
-Este proyecto implementa dos programas en Go que se conectan a Oracle y PostgreSQL respectivamente, ejecutan un conjunto de consultas predefinidas, y verifican la equivalencia de resultados entre ambas bases.
+## Conexión e interacción cdesde Go con Oracle y PostgreSQL
+Este proyecto conecta una aplicación escrita en Go con dos motores de base de datos: Oracle y PostgreSQL, permitiendo realizar operaciones (consultas, inserciones, actualizaciones, etc.) sobre ambas desde un mismo entorno.
 
 
 ## Estructura
